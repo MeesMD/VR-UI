@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 7437cef429402c247a7d2b3b94642e15
+=======
+guid: b85077ce944c96f43b8818ed57d1888d
+>>>>>>> 7cc466c7e2bb8423bf76e6ca5d936c35003f70a5
 timeCreated: 1524767711
 licenseType: Pro
 PluginImporter:
