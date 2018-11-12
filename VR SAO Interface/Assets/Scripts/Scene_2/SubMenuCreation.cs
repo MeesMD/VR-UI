@@ -11,7 +11,7 @@ public class SubMenuCreation : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Keypad1) && !isActive) {
+        if (gameObject.activeSelf && !isActive) {
             OpenInterface();
         }
 

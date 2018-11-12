@@ -34,8 +34,12 @@ public class GUIButton : MonoBehaviour {
         state = !state;
         if (state) {
             spriteR.sprite = buttonStates[1];
+            foreach (Transform child in this.transform)
+                child.gameObject.SetActive(true);
         } else {
             spriteR.sprite = buttonStates[0];
+            foreach (Transform child in this.transform)
+                child.gameObject.SetActive(false);
         }
     }
 }
