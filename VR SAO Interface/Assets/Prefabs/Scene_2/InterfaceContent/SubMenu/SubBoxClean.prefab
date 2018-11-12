@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4631359406569676}
   - component: {fileID: 212398720472143296}
   m_Layer: 0
-  m_Name: SubBox
+  m_Name: SubBoxClean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1597787859942350}
-  m_Text: Skills
+  m_Text: Name
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
