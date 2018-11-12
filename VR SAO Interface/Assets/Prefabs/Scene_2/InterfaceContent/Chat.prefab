@@ -197,6 +197,7 @@ MonoBehaviour:
   - {fileID: 1514141985169856, guid: 8cf361421eca84047b2c942b4857e44a, type: 2}
   - {fileID: 1514141985169856, guid: 8cf361421eca84047b2c942b4857e44a, type: 2}
   - {fileID: 1514141985169856, guid: 8cf361421eca84047b2c942b4857e44a, type: 2}
+  xDistance: 6
 --- !u!114 &114617076958269782
 MonoBehaviour:
   m_ObjectHideFlags: 1

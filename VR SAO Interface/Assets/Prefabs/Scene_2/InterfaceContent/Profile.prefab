@@ -327,8 +327,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content:
   - {fileID: 1514141985169856, guid: 8cf361421eca84047b2c942b4857e44a, type: 2}
+  - {fileID: 1075950441648494, guid: b0546cfb66788344a98899603e41aab0, type: 2}
   - {fileID: 1514141985169856, guid: 8cf361421eca84047b2c942b4857e44a, type: 2}
-  - {fileID: 1514141985169856, guid: 8cf361421eca84047b2c942b4857e44a, type: 2}
+  xDistance: 6
 --- !u!212 &212478054861565250
 SpriteRenderer:
   m_ObjectHideFlags: 1
