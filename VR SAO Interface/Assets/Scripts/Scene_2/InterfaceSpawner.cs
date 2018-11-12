@@ -19,11 +19,11 @@ public class InterfaceSpawner : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown("space") && !isActive) {
+        if (Input.GetKeyDown(KeyCode.Space) && !isActive) {
             OpenInterface();
         }
 
-        if (Input.GetKeyDown("escape")) {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             CloseInterface();
         }
     }
@@ -45,7 +45,7 @@ public class InterfaceSpawner : MonoBehaviour {
 
 
     IEnumerator SpawnContent(int i) {
-        GameObject prefab = Instantiate(content[i], transform.position + new Vector3(0, (((content.Length - 1) * DistContent / 2) + 5), 0), transform.rotation);
+        GameObject prefab = Instantiate(content[i], new Vector3(0, (((content.Length - 1) * DistContent / 2) + 5), 0), transform.rotation);
         prefab.transform.SetParent(transform, false);
 
         float elapsedTime = 0;
