@@ -6,6 +6,8 @@ public class SubMenuCreation : MonoBehaviour {
 
     [SerializeField]
     private GameObject[] content;
+    [SerializeField]
+    private float xDistance = 0;
     private bool isActive;
     private float DistContent = 2;
 
@@ -36,7 +38,7 @@ public class SubMenuCreation : MonoBehaviour {
 
 
     IEnumerator SpawnContent(int i) {
-        GameObject prefab = Instantiate(content[i], new Vector3(6, (i * DistContent - ((content.Length - 1) * DistContent / 2)), 0), transform.rotation);
+        GameObject prefab = Instantiate(content[i], new Vector3(xDistance, (i * DistContent - ((content.Length - 1) * DistContent / 2)), 0), transform.rotation);
         prefab.transform.SetParent(transform, false);
         yield return null;
     }
