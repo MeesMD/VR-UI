@@ -38,7 +38,7 @@ public class SubMenuCreation : MonoBehaviour {
 
 
     IEnumerator SpawnContent(int i) {
-        GameObject prefab = Instantiate(content[i], new Vector3(xDistance, (i * DistContent - ((content.Length - 1) * DistContent / 2)), 0), transform.rotation);
+        GameObject prefab = Instantiate(content[i], new Vector3(xDistance, (i * DistContent - ((content.Length - 1) * DistContent / 2)), 0), Quaternion.identity);
         prefab.transform.SetParent(transform, false);
         yield return null;
     }

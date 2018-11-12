@@ -6,6 +6,11 @@ public class InterfaceSpawner : MonoBehaviour {
 
     [SerializeField]
     private GameObject[] content;
+    [SerializeField]
+    private Transform cameraPos;
+    private Vector3 SpawnPosition;
+
+    private float distanceFromCam = 30;
     private bool isActive;
     private float DistContent = 3;
     private float contentSpeed = 4;
@@ -30,6 +35,13 @@ public class InterfaceSpawner : MonoBehaviour {
 
     public void OpenInterface() {
         audioSrc.PlayOneShot(audioSrc.clip);
+        //transform.position = new Vector3(cameraPos.forward * distanceFromCam + cameraPos.position);
+        SpawnPosition = cameraPos.forward * distanceFromCam + cameraPos.position;
+        transform.position = SpawnPosition;
+        //transform.rotation = cameraPos.rotation;
+        transform.LookAt(new Vector3(0, cameraPos.position.y, 0));
+        transform.rotation = new Quaternion(0, transform.rotation.y + 180, 0, 1);
+
         for (int i = 0; i < content.Length; i++) {
             StartCoroutine("SpawnContent", i);
             isActive = true;
@@ -45,12 +57,12 @@ public class InterfaceSpawner : MonoBehaviour {
 
 
     IEnumerator SpawnContent(int i) {
-        GameObject prefab = Instantiate(content[i], new Vector3(0, (((content.Length - 1) * DistContent / 2) + 5), 0), transform.rotation);
+        GameObject prefab = Instantiate(content[i], new Vector3(0, (((content.Length - 1) * DistContent / 2) + 5), 0), Quaternion.identity);
         prefab.transform.SetParent(transform, false);
 
         float elapsedTime = 0;
         while (elapsedTime < contentSpeed) {
-            prefab.transform.position = Vector3.Lerp(prefab.transform.position, transform.position - new Vector3(0,(i* DistContent - ((content.Length - 1) * DistContent / 2)),0), (elapsedTime / contentSpeed));
+            prefab.transform.position = Vector3.Lerp(prefab.transform.position, transform.position - new Vector3(0, (i* DistContent - ((content.Length - 1) * DistContent / 2)), 0), (elapsedTime / contentSpeed));
             elapsedTime += Time.deltaTime;
             yield return null;
         }
