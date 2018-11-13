@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 8a86b073297120d4c816e093890b97eb
+timeCreated: 1540811538
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SAO UI
+  fontNames:
+  - SAO UI
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 66b656b165ad31440918fd0926c0c3f0, type: 3}
+  - {fileID: 12800000, guid: 5798ccac0bdde444398e7caa2f1372af, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
