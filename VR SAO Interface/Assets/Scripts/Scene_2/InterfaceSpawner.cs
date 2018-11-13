@@ -10,9 +10,13 @@ public class InterfaceSpawner : MonoBehaviour {
     private Transform cameraPos;
     private Vector3 SpawnPosition;
 
-    private float distanceFromCam = 30;
+    [Header("Interface settings")]
+    [SerializeField]
+    private float distanceFromCam = 5;
     private bool isActive;
+    [SerializeField]
     private float DistContent = 3;
+    [SerializeField]
     private float contentSpeed = 4;
     private float waitTime = 1;
 

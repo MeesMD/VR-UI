@@ -12,21 +12,21 @@ public class GUIButton : MonoBehaviour {
     private AudioSource audioSrc;
     private bool state;
 
-    // Use this for initialization
+    private float cooldownPress = 1;
+    private bool canPress;
+
     void Start() {
         audioSrc = GetComponent<AudioSource>();
         spriteR = gameObject.GetComponent<SpriteRenderer>();
-    }
-
-    // Update is called once per frame
-    void Update() {
-
+        canPress = true;
     }
 
     void OnTriggerEnter(Collider col) {
-        if (col.gameObject.CompareTag("Hand")) {
+        if (col.gameObject.CompareTag("Hand") && canPress) {
             audioSrc.PlayOneShot(buttonSounds[0]);
             ChangeState();
+            canPress = false;
+            StartCoroutine("Cooldown");
         }
     }
 
@@ -41,5 +41,10 @@ public class GUIButton : MonoBehaviour {
             foreach (Transform child in this.transform)
                 child.gameObject.SetActive(false);
         }
+    }
+
+    IEnumerator Cooldown() {
+        yield return new WaitForSeconds(cooldownPress);
+        canPress = true; ;
     }
 }
