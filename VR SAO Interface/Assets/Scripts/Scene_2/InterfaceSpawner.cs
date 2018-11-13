@@ -39,12 +39,11 @@ public class InterfaceSpawner : MonoBehaviour {
 
     public void OpenInterface() {
         audioSrc.PlayOneShot(audioSrc.clip);
-        //transform.position = new Vector3(cameraPos.forward * distanceFromCam + cameraPos.position);
         SpawnPosition = cameraPos.forward * distanceFromCam + cameraPos.position;
-        transform.position = SpawnPosition;
-        //transform.rotation = cameraPos.rotation;
-        transform.LookAt(new Vector3(0, cameraPos.position.y, 0));
-        transform.rotation = new Quaternion(0, transform.rotation.y + 180, 0, 1);
+        //SpawnPosition = new Vector3(cameraPos.position.x, cameraPos.position.y, (cameraPos.position.z - distanceFromCam));
+        //transform.position = SpawnPosition;
+        transform.position = new Vector3(SpawnPosition.x, cameraPos.position.y, SpawnPosition.z);
+        transform.LookAt(cameraPos);
 
         for (int i = 0; i < content.Length; i++) {
             StartCoroutine("SpawnContent", i);
