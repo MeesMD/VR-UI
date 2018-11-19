@@ -351,7 +351,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f5c9ead2cce717c48b863bdb9231652e, type: 3}
   - {fileID: 8300000, guid: 1f44bb112e4a6914597b57fdf5330f33, type: 3}
   audioSrc: {fileID: 82559272030767054}
-  side: {x: 1, y: 0, z: 0}
+  side: 1
 --- !u!114 &114464195188782018
 MonoBehaviour:
   m_ObjectHideFlags: 1
