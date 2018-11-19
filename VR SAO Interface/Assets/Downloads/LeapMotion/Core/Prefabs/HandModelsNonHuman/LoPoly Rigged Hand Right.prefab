@@ -1027,8 +1027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01643b5a4cda57b46a3284186ab85a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _indexJoint: {fileID: 4895935397532050}
-  _middleJoint: {fileID: 4125451489810824}
+  coreJoints: {fileID: 4531408399205808}
 --- !u!114 &114377997804964430
 MonoBehaviour:
   m_ObjectHideFlags: 1
