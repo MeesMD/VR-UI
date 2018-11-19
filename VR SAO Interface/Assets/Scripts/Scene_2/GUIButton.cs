@@ -13,6 +13,8 @@ public class GUIButton : MonoBehaviour {
     private GameObject[] content;
     private AudioSource audioSrc;
     private bool state;
+    private GameObject buttonManager;
+    private ButtonManager scriptManager;
 
     private float cooldownPress = .5f;
     private bool canPress;
@@ -21,32 +23,33 @@ public class GUIButton : MonoBehaviour {
     void Start() {
         audioSrc = GetComponent<AudioSource>();
         spriteR = gameObject.GetComponent<SpriteRenderer>();
+        buttonManager = GameObject.Find("Interface");
+        scriptManager = buttonManager.GetComponent<ButtonManager>();
         canPress = true;
     }
 
     void OnTriggerEnter(Collider col) {
         if (col.gameObject.CompareTag("Hand") && canPress) {
             audioSrc.PlayOneShot(buttonSounds[0]);
-            ChangeState();
+            scriptManager.ButtonClicked(this.gameObject);
             canPress = false;
             StartCoroutine("Cooldown");
         }
     }
 
-    public void ChangeState() {
-        state = !state;
-        if (state) {
-            spriteR.sprite = buttonStates[1];
-            for (int i = 0; i < content.Length; i++) {
-                content[i].SetActive(true);
-                isActive = true;
-            }
-        } else {
-            spriteR.sprite = buttonStates[0];
-            for (int i = 0; i < content.Length; i++) {
-                content[i].SetActive(false);
-                isActive = false;
-            }
+    public void TurnOn() {
+        spriteR.sprite = buttonStates[1];
+        for (int i = 0; i < content.Length; i++) {
+            content[i].SetActive(true);
+            isActive = true;
+        }
+    }
+
+    public void TurnOff() {
+        spriteR.sprite = buttonStates[0];
+        for (int i = 0; i < content.Length; i++) {
+            content[i].SetActive(false);
+            isActive = false;
         }
     }
 
