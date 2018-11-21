@@ -15,9 +15,9 @@ Er waren verschillende Engines en talen die gebruikt konden worden voor deze opd
 		- Nog een C# project voor onze portfolios.
 	- Plus punten:
 		- Goede HTC Vive VR ondersteuning aanwezig.
-    		- Goede Leap Motion ondersteuning aanwezig.
+    	- Goede Leap Motion ondersteuning aanwezig.
    		- We hebben kennis van de engine.
-    		- Snel het product leveren.
+    	- Snel het product leveren.
     
 - Unreal Engine:
 	- Min punten:
@@ -26,32 +26,31 @@ Er waren verschillende Engines en talen die gebruikt konden worden voor deze opd
 		- Weinig kennis van C++.
 	- Plus punten:
 		- HTC Vive VR ondersteuning aanwezig.
-    		- Leap Motion ondersteuning aanwezig.
-    		- Een nieuw C++ project voor onze portfolios.
-    		- Nieuwe engine leren.
+    	- Leap Motion ondersteuning aanwezig.
+    	- Een nieuw C++ project voor onze portfolios.
+    	- Nieuwe engine leren.
     
 - Processing:
   	- Min punten:
-    		- Niet idereeen heeft ervaring in deze engine.
 		- Niet speciefiek gemaakt voor 3D.
+		- Niet idereeen heeft ervaring in deze engine.
   	- Plus punten:
-    		- HTC Vive VR ondersteuning aanwezig.
 		- Leap Motion ondersteuning aanwezig.
+		- HTC Vive VR ondersteuning aanwezig.
 
 We hebben uiteindelijk voor Unity gekozen aangezien we er meer ervaring in hebben. Aangezien we een product wilde leveren aan het einde van de sprints was het de beste keuze om een engine te kiezen waar we al meer ervaring in hebben.<br>
 Het concept werd in een 3D wereld gebruikt waardoor de engine Processing niet de beste optie was om het project in te maken. Verder hadden we informatie gekregen ven aan klas genoot die ervaring had in unreal en de Leap Motion. Zijn mening was dat Unreal niet de optimale ondersteuning gaf waardoor het de beste keuze was om de Unity engine te gebruiken.
  
 
 ## Leerdoelen 
-Wat wil je bereiken met dit project? Formuleer dit kort, krachtig en haalbaar.
 - Het kunnen omgaan met VR in Unity.
 - Een Interface kunnen maken in VR.
 - Het kunnen omgaan met een Leap motion in Unity.
 
 ## Planning 
-Lucas Hilgevoord: https://goo.gl/3tzZvb
-Mees Dekker:   https://goo.gl/LTm5Xo
-Troy Toendang:  https://goo.gl/aPZQzw
+Lucas Hilgevoord: https://goo.gl/3tzZvb<br>
+Mees Dekker:   https://goo.gl/LTm5Xo<br>
+Troy Toendang:  https://goo.gl/aPZQzw<br>
 
 ## Bronnen
 - [Leap motion](https://www.leapmotion.com/)
