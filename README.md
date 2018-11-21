@@ -1,35 +1,56 @@
 # VR UI
-*Let goed bij het maken, schrijven en bijhouden van dit document op de **[prestatie-indicatoren](https://drive.google.com/drive/folders/1y8l0Zr4E8b6gYJui_pSzQaoWr-gEr6JN?usp=sharing)**. Deze toon je aan in dit document.*
-
-Hier komt een korte beschrijving van de proefopdracht. Wat heb je precies gedaan? 
+Dit project is een recreatie van de UI van de serie "Sword Art Online".   
 
 ## Features
-Wanneer je een specifiek onderdeel wilt uitlichten kun je dat in deze sectie benoemen.
-
-- [Awesome Algoritme](link)
-- [Specifieke Mechanic](link)
-- [Iets unieks waar je trots op bent binnen de project](link)
+- [Leap motion](link)
+- [HTC Vive](link)
 
 ## Software Anaylse 
-Welke software heb je voor deze proefopdracht onderzocht? En waarom heb je uiteindelijk gekozen voor de gekozen Software. Benoem hier specifieke argumenten.
+Er waren verschillende Engines en talen die gebruikt konden worden voor deze opdracht. Aangezien we met VR en een Leap Motion aan de slag wilden was het handiger om een Engine te kiezen die deze twee componenten ondersteunde.
+
+ Software onderzoeken:
+- Unity3D/Unity2D:
+	- Min punten:
+		- Nog een C# project voor onze portfolios.
+	- Plus punten:
+		- Goede VR Support aanwezig.
+    - Goede Leap Support aanwezig.
+    - We hebben kennis van de engine.
+    - Snel het product leveren.
+    
+- Unreal Engine:
+	- Min punten:
+		- Leap support is niet optimaal.
+	- Plus punten:
+		- VR Support aanwezig.
+    - Leap Support aanwezig.
+    - Een nieuw C++ project voor onze portfolios.
+    - Nieuwe engine leren.
+    
+- Processing:
+  - Min punten:
+    -
+  - Plus punten:
+    - VR support
+ 
 
 ## Leerdoelen 
 Wat wil je bereiken met dit project? Formuleer dit kort, krachtig en haalbaar.
-- Het Flood-Fill algoritme snappen en toepassen
-- Het ontwikkelen van een generieke FSM.
-- etc. etc.
+- Het kunnen omgaan met VR in Unity.
+- Een Interface kunnen maken in VR.
+- Het kunnen omgaan met een Leap motion in Unity.
 
 ## Planning 
-Je hebt grofweg 2 weken, hoe deel je deze twee weken in. Wat plan je wanneer om precies te doen?
-
-| | maandag | dinsdag | woensdag | donderdag | vrijdag |
-| --- | --- | --- | --- | --- | --- |
-|week 1 |
-|week 2 |
+Lucas Hilgevoord: https://goo.gl/3tzZvb
+Mees Dekker:   https://goo.gl/LTm5Xo
+Troy Toendang:  https://goo.gl/aPZQzw
 
 ## Bronnen
-Welke bronnen heb je gebruikt? Zowel youtube filmpjes als artikelen
-
-- [The Guide To Game Design](link)
-- [Alleatoric Algorithms](link)
-- [Flood-Fill Wikipedia](link)
+- [Leap motion](https://www.leapmotion.com/)
+- [Leap motion SDK](https://developer.leapmotion.com/unity/)
+- [HTC Vive](https://www.vive.com/eu/)
+- [SteamVR SDK](https://github.com/ValveSoftware/steamvr_unity_plugin/releases/tag/1.2.3)
+- [Unity](https://unity3d.com/)
+- [Interface Concept](https://www.youtube.com/watch?v=d70Sc0IzKm0)
+- [Intro Concept](https://www.youtube.com/watch?v=EUcrAwZamls)
+- [Content Concept](https://www.youtube.com/watch?v=ALGcJVFb5oo)
