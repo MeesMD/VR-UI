@@ -2,8 +2,7 @@
 Dit project is een recreatie van de UI van de serie "Sword Art Online".   
 
 ## Features
-- [Leap motion](link)
-- [HTC Vive](link)
+- [Download](link)
 
 ## Software Anaylse 
 Er waren verschillende Engines en talen die gebruikt konden worden voor deze opdracht. Aangezien we met VR en een Leap Motion aan de slag wilden was het handiger om een Engine te kiezen die deze twee componenten ondersteunde.
@@ -14,24 +13,24 @@ Er waren verschillende Engines en talen die gebruikt konden worden voor deze opd
 		- Nog een C# project voor onze portfolios.
 	- Plus punten:
 		- Goede VR Support aanwezig.
-    - Goede Leap Support aanwezig.
-    - We hebben kennis van de engine.
-    - Snel het product leveren.
+    		- Goede Leap Support aanwezig.
+   		- We hebben kennis van de engine.
+    		- Snel het product leveren.
     
 - Unreal Engine:
 	- Min punten:
 		- Leap support is niet optimaal.
 	- Plus punten:
 		- VR Support aanwezig.
-    - Leap Support aanwezig.
-    - Een nieuw C++ project voor onze portfolios.
-    - Nieuwe engine leren.
+    		- Leap Support aanwezig.
+    		- Een nieuw C++ project voor onze portfolios.
+    		- Nieuwe engine leren.
     
 - Processing:
-  - Min punten:
-    -
-  - Plus punten:
-    - VR support
+  	- Min punten:
+    		-
+  	- Plus punten:
+    		- VR support
  
 
 ## Leerdoelen 
