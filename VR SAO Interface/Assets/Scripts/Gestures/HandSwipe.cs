@@ -8,7 +8,7 @@ public class HandSwipe : MonoBehaviour {
 
     public Transform coreJoints;
     Vector3 startingPos;
-    private float endPos = -0.1f;
+    private float endPos = 0.3f;
 
     private bool menuReady;
     private bool menuRoutine;
@@ -19,71 +19,95 @@ public class HandSwipe : MonoBehaviour {
 
     void CheckmenuState()
     {
-        startingPos = new Vector3(0, coreJoints.position.y, 0);
+        //startingPos = new Vector3(0, 0, coreJoints.position.z);
 
-        if (startingPos.y >= 0 && menuTimer <= menuTimeLimit)
+        if (startingPos.z <= endPos)
         {
-            print("Menu ready for use, extend fingers to unlock.");
+            Debug.Log("Menu ready for use, extend fingers to unlock.");
             menuReady = true;
-            menuRoutine = true;
+            //menuRoutine = true;
         }
-        else if (startingPos.y <= 0 || menuTimer >= menuTimeLimit)
+        else if (startingPos.z >= endPos)
         {
-            print("Menu not able to be activated");
-            if (menuTimer >= menuTimeLimit)
-            {
-                print("Time ran out.");
-                menuReady = false;
-                menuRoutine = false;
-            }
+            print("Hand not in range");
         }
     }
 
     public void ActivateMenu()
     {
-        if (menuRoutine)
+        if (menuReady)
         {
-            print("Menu activated");
+            Debug.Log("Menu activated");
             StartCoroutine("menuEnum");
-        }
+        } 
+        menuTimer = 0;
     }
 
+    /*
     public void DeactivateMenu()
     {
         print("Menu deactivated");
         menuTimer = 0;
         menuReady = false;
     }
+    */
 
     void SwipeMenu()
     {
-        if (startingPos.y <= endPos)
+        if (startingPos.z >= endPos)
+        {
+            Debug.Log("Swiped");
+            menuTimer = 0;
+            //menuRoutine = false;
+            menuReady = false;
+            StopCoroutine("menuEnum");
+        }
+
+        /*
+        if (startingPos.z >= endPos)
         {
             print("Swiped");
-            menuTimer = 0;
-            menuRoutine = false;
-            menuReady = false;
         }
+        else if (startingPos.z <= endPos)
+        {
+            print("Can't swipe");
+        }
+        */
     }
 
     void Update()
     {
+        startingPos = coreJoints.position;
         Debug.Log(menuReady);
 
         //SwipeMenu();
         CheckmenuState();
+
+        /*
+        if (menuTimer >= menuTimeLimit && menuRoutine)
+        {
+            menuReady = false;
+            menuRoutine = false;
+        }
+        */
     }
 
     IEnumerator menuEnum()
     {
-        print("You have 3 seconds to swipe down for unlocking the menu.");
+        menuRoutine = true;
 
         while (menuReady)
         {
+            SwipeMenu();
             if (menuTimer <= menuTimeLimit)
             {
                 menuTimer += menuMultiplier * Time.deltaTime;
-                SwipeMenu();
+                Debug.Log("You have 5 minutes to swipe.");
+            }
+            else if (menuTimer >= menuTimeLimit)
+            {
+                Debug.Log("Time ran out.");
+                menuReady = false;
             }
             yield return null;
         }

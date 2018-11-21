@@ -118,6 +118,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1168191907591540
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4552021465024416}
+  m_Layer: 0
+  m_Name: R_Palm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1221165888851140
 GameObject:
   m_ObjectHideFlags: 1
@@ -253,21 +268,6 @@ GameObject:
   - component: {fileID: 4044422670016362}
   m_Layer: 0
   m_Name: R_index_end
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1402805107215210
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4935935440339822}
-  m_Layer: 0
-  m_Name: Core Joints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -656,21 +656,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1748918924141380
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4315488168096106}
-  m_Layer: 0
-  m_Name: R_Palm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1790616704750298
 GameObject:
   m_ObjectHideFlags: 1
@@ -772,7 +757,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4823769542278466}
-  - component: {fileID: 114379670158202386}
+  - component: {fileID: 114566813805768998}
   m_Layer: 0
   m_Name: Leap Setup
   m_TagString: Untagged
@@ -912,7 +897,7 @@ GameObject:
   - component: {fileID: 114335367396991414}
   - component: {fileID: 114130207876613886}
   - component: {fileID: 114749232246841050}
-  - component: {fileID: 114022536834025154}
+  - component: {fileID: 114135435196384950}
   m_Layer: 0
   m_Name: LoPoly Rigged Hand Right
   m_TagString: Untagged
@@ -1121,8 +1106,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4410183784416090}
-  m_Father: {fileID: 4935935440339822}
-  m_RootOrder: 0
+  m_Father: {fileID: 4552021465024416}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4292933432583376
 Transform:
@@ -1151,23 +1136,6 @@ Transform:
   m_Father: {fileID: 4411030204052774}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4315488168096106
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748918924141380}
-  m_LocalRotation: {x: 0.14715023, y: -0.029150411, z: 0.31549877, w: 0.93699396}
-  m_LocalPosition: {x: -0.19967407, y: 0.3516448, z: 0.20746493}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4935935440339822}
-  - {fileID: 4324681369720694}
-  - {fileID: 4832168273137510}
-  - {fileID: 4809730066982418}
-  m_Father: {fileID: 4547092785165478}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4320397032032514
 Transform:
   m_ObjectHideFlags: 1
@@ -1193,8 +1161,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4228465477850612}
-  m_Father: {fileID: 4315488168096106}
-  m_RootOrder: 1
+  m_Father: {fileID: 4552021465024416}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4348067500839146
 Transform:
@@ -1405,9 +1373,27 @@ Transform:
   m_LocalPosition: {x: -8.809142e-21, y: 0, z: -5.746268e-20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4315488168096106}
+  - {fileID: 4552021465024416}
   m_Father: {fileID: 4669896637485376}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4552021465024416
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168191907591540}
+  m_LocalRotation: {x: 0.14715023, y: -0.029150411, z: 0.31549877, w: 0.93699396}
+  m_LocalPosition: {x: -0.19967407, y: 0.3516448, z: 0.20746493}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4324681369720694}
+  - {fileID: 4832168273137510}
+  - {fileID: 4809730066982418}
+  - {fileID: 4289209646363058}
+  - {fileID: 4907072789425050}
+  m_Father: {fileID: 4547092785165478}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4586204142029746
 Transform:
@@ -1644,8 +1630,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4782988459088970}
-  m_Father: {fileID: 4315488168096106}
-  m_RootOrder: 3
+  m_Father: {fileID: 4552021465024416}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4823769542278466
 Transform:
@@ -1673,8 +1659,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4843119560675268}
-  m_Father: {fileID: 4315488168096106}
-  m_RootOrder: 2
+  m_Father: {fileID: 4552021465024416}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4840770113745470
 Transform:
@@ -1728,23 +1714,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4840770113745470}
-  m_Father: {fileID: 4935935440339822}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4935935440339822
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1402805107215210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4289209646363058}
-  - {fileID: 4907072789425050}
-  m_Father: {fileID: 4315488168096106}
-  m_RootOrder: 0
+  m_Father: {fileID: 4552021465024416}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4946346920083006
 Transform:
@@ -1844,18 +1815,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114022536834025154
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1987827308780990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01643b5a4cda57b46a3284186ab85a96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coreJoints: {fileID: 4935935440339822}
 --- !u!114 &114026795301280540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1878,6 +1837,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd03e00992e084c8be61565d44b8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114135435196384950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987827308780990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01643b5a4cda57b46a3284186ab85a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coreJoints: {fileID: 4552021465024416}
 --- !u!114 &114166810201666560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2109,7 +2080,7 @@ MonoBehaviour:
   - {fileID: 114297726391235412}
   - {fileID: 114810120385973422}
   - {fileID: 114796945314279880}
-  palm: {fileID: 4315488168096106}
+  palm: {fileID: 4552021465024416}
   forearm: {fileID: 0}
   wristJoint: {fileID: 0}
   elbowJoint: {fileID: 0}
@@ -2123,7 +2094,7 @@ MonoBehaviour:
   modelPalmFacing: {x: 0, y: -1, z: 0}
   jointList:
   - {fileID: 4547092785165478}
-  - {fileID: 4315488168096106}
+  - {fileID: 4552021465024416}
   - {fileID: 4289209646363058}
   - {fileID: 4410183784416090}
   - {fileID: 4412538587748160}
@@ -2227,18 +2198,6 @@ MonoBehaviour:
   scaleLastFingerBone: 1
   modelFingerPointing: {x: -1, y: 0, z: 0}
   modelPalmFacing: {x: 0, y: 1, z: 0}
---- !u!114 &114379670158202386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1834508993230538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01643b5a4cda57b46a3284186ab85a96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coreJoints: {fileID: 4935935440339822}
 --- !u!114 &114400198150372816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2313,6 +2272,18 @@ MonoBehaviour:
   scaleLastFingerBone: 1
   modelFingerPointing: {x: -1, y: 0, z: 0}
   modelPalmFacing: {x: 0, y: 1, z: 0}
+--- !u!114 &114566813805768998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834508993230538}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01643b5a4cda57b46a3284186ab85a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coreJoints: {fileID: 4289209646363058}
 --- !u!114 &114749232246841050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2327,7 +2298,7 @@ MonoBehaviour:
   OnActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114022536834025154}
+      - m_Target: {fileID: 114135435196384950}
         m_MethodName: ActivateMenu
         m_Mode: 1
         m_Arguments:
@@ -2343,7 +2314,7 @@ MonoBehaviour:
   OnDeactivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114022536834025154}
+      - m_Target: {fileID: 114135435196384950}
         m_MethodName: DeactivateMenu
         m_Mode: 1
         m_Arguments:
@@ -2502,7 +2473,7 @@ SkinnedMeshRenderer:
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300000, guid: ce6112dd14179d448958c91c5b4e8de2, type: 3}
   m_Bones:
-  - {fileID: 4315488168096106}
+  - {fileID: 4552021465024416}
   - {fileID: 4809730066982418}
   - {fileID: 4782988459088970}
   - {fileID: 4039535205589264}
@@ -2528,7 +2499,7 @@ SkinnedMeshRenderer:
   - {fileID: 4953962421025726}
   - {fileID: 4094714011164046}
   m_BlendShapeWeights: []
-  m_RootBone: {fileID: 4315488168096106}
+  m_RootBone: {fileID: 4552021465024416}
   m_AABB:
     m_Center: {x: 0.08243869, y: 0.0018077325, z: 0.008441988}
     m_Extent: {x: 0.10559821, y: 0.044362344, z: 0.08608115}
