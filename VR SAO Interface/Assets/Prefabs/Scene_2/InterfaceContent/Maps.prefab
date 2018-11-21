@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 82379530912369758}
   m_Layer: 0
   m_Name: Maps
-  m_TagString: Untagged
+  m_TagString: Interface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

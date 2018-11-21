@@ -37,6 +37,30 @@ public class SubMenuCreation : MonoBehaviour {
     IEnumerator SpawnContent(int i) {
         GameObject prefab = Instantiate(content[i], new Vector3(xDistance, (i * DistContent - ((content.Length - 1) * DistContent / 2)), 0), Quaternion.identity);
         prefab.transform.SetParent(transform, false);
+
+        var p = prefab.GetComponent<GUIButton>();
+        var x = prefab.transform.parent.transform.parent;
+        var pp = x.GetComponent<GUIButton>();
+
+        GUIButton rootObject = null;
+        GUIButton last = null;
+        if(p.Parent != null) {
+            while(true) {
+                if(p.Parent == null) {
+                    rootObject = last;
+                    break;
+                }
+
+                last = p.Parent;
+            }
+        }
+
+        p.Root = rootObject;
+
+
+
+        p.Parent = pp;
+
         yield return null;
     }
 }

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114806443436253784}
   m_Layer: 0
   m_Name: SubBoxCleanWithSub
-  m_TagString: Untagged
+  m_TagString: SubMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,6 +334,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: be155d2767496634cb272a6e1151ee2d, type: 3}
   buttonSounds:
   - {fileID: 8300000, guid: b5cbe3ddff1a9b24c955177eaf41cc81, type: 3}
+  content: []
+  isActive: 0
 --- !u!212 &212605634583067526
 SpriteRenderer:
   m_ObjectHideFlags: 1

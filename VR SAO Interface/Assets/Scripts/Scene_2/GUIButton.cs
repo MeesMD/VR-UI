@@ -11,6 +11,11 @@ public class GUIButton : MonoBehaviour {
     private AudioClip[] buttonSounds;
     [SerializeField]
     private GameObject[] content;
+
+
+    public GUIButton Parent { get; set; }
+    public GUIButton Root { get; set; }
+
     private AudioSource audioSrc;
     private bool state;
     private GameObject buttonManager;

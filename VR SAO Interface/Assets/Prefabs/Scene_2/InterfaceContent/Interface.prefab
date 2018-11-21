@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 82130274384288618}
   m_Layer: 0
   m_Name: Interface
-  m_TagString: Untagged
+  m_TagString: Interface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,3 +138,7 @@ MonoBehaviour:
   - {fileID: 1225388125659034, guid: 30a0ac8415002bc4a96bd6e61dbf7839, type: 2}
   - {fileID: 1240245683158196, guid: 44e4bb9fb574892498362819844da429, type: 2}
   - {fileID: 1182740051403936, guid: 982856ecbdadb234bb4429dc2c36b7d7, type: 2}
+  cameraPos: {fileID: 0}
+  distanceFromCam: 5
+  DistContent: 3
+  contentSpeed: 4

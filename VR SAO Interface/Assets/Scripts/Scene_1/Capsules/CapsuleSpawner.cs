@@ -38,7 +38,7 @@ public class CapsuleSpawner : MonoBehaviour {
         GameObject capsule = Instantiate(Capsule, randomPosWithin, transform.rotation);
         capsule.transform.parent = gameObject.transform;
         var cpos = capsule.transform.position;
-        if ((cpos.x < 1 && cpos.x > -1) || (cpos.z < 1 && cpos.z > -1)) {
+        if ((cpos.x < 30 && cpos.x > -30) || (cpos.z < 30 && cpos.z > -30)) {
             Destroy(capsule.gameObject);
         }
     }

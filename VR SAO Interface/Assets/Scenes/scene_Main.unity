@@ -291,6 +291,22 @@ MonoBehaviour:
   _temporalWarpingMode: 0
   _customWarpAdjustment: 17
   _updateHandInPrecull: 0
+--- !u!1 &184240309 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1515089429831946, guid: d501a5534a970f54283dbf7d264d1557,
+    type: 2}
+  m_PrefabInternal: {fileID: 1621450901}
+--- !u!114 &184240310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184240309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab18d5d93dfb67c4b8738a7f67f48325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &615866472
 Prefab:
   m_ObjectHideFlags: 0
@@ -1232,6 +1248,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 036e5df1dbe0b1448842f52c3a674744, type: 2}
+    - target: {fileID: 135171540547272150, guid: f672d67a8de53a640993221d2fcdc7e0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f672d67a8de53a640993221d2fcdc7e0, type: 2}
   m_IsPrefabParent: 0

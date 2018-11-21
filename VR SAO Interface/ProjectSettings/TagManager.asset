@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hand
+  - Undefined
+  - Interface
+  - SubMenu
   layers:
   - Default
   - TransparentFX

@@ -59,6 +59,7 @@ public class TechAnimation : MonoBehaviour {
 
     void Ending() {
         transform.position += new Vector3(side,0,0) * Time.deltaTime * 100;
+        transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
         Destroy(gameObject, 1f);
         if (!useOnce) {
             for (int i = 0; i < 3; i++) {
