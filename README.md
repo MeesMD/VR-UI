@@ -1,8 +1,10 @@
-# VR UI
-Dit project is een recreatie van de UI van de serie "Sword Art Online".   
+# Concept
+Het concept is gebaseerd op een animatie serie genaamd 'Sword art online'. In de serie word er een interface gebruikt die de spelers van de wereld toegang geeft tot de opties, inventory, vrienden, berichten en maps. Dit vonden wij een interessant concept waardoor we het graag na wilden maken.
 
 ## Features
-- [Download](link)
+- [Download](#)
+- [Documentatie](https://app.asana.com/0/894619252604420/board)
+- [Google Drive](https://drive.google.com/drive/folders/15yyzSiBMMeK2aws38RVjT1BxdM5t4XQX)
 
 ## Software Anaylse 
 Er waren verschillende Engines en talen die gebruikt konden worden voor deze opdracht. Aangezien we met VR en een Leap Motion aan de slag wilden was het handiger om een Engine te kiezen die deze twee componenten ondersteunde.
@@ -12,25 +14,32 @@ Er waren verschillende Engines en talen die gebruikt konden worden voor deze opd
 	- Min punten:
 		- Nog een C# project voor onze portfolios.
 	- Plus punten:
-		- Goede VR Support aanwezig.
-    		- Goede Leap Support aanwezig.
+		- Goede HTC Vive VR ondersteuning aanwezig.
+    		- Goede Leap Motion ondersteuning aanwezig.
    		- We hebben kennis van de engine.
     		- Snel het product leveren.
     
 - Unreal Engine:
 	- Min punten:
-		- Leap support is niet optimaal.
+		- Leap Motion ondersteuning is niet optimaal.
+		- Weinig kennis van de engine.
+		- Weinig kennis van C++.
 	- Plus punten:
-		- VR Support aanwezig.
-    		- Leap Support aanwezig.
+		- HTC Vive VR ondersteuning aanwezig.
+    		- Leap Motion ondersteuning aanwezig.
     		- Een nieuw C++ project voor onze portfolios.
     		- Nieuwe engine leren.
     
 - Processing:
   	- Min punten:
-    		-
+    		- Niet idereeen heeft ervaring in deze engine.
+		- Niet speciefiek gemaakt voor 3D.
   	- Plus punten:
-    		- VR support
+    		- HTC Vive VR ondersteuning aanwezig.
+		- Leap Motion ondersteuning aanwezig.
+
+We hebben uiteindelijk voor Unity gekozen aangezien we er meer ervaring in hebben. Aangezien we een product wilde leveren aan het einde van de sprints was het de beste keuze om een engine te kiezen waar we al meer ervaring in hebben.<br>
+Het concept werd in een 3D wereld gebruikt waardoor de engine Processing niet de beste optie was om het project in te maken. Verder hadden we informatie gekregen ven aan klas genoot die ervaring had in unreal en de Leap Motion. Zijn mening was dat Unreal niet de optimale ondersteuning gaf waardoor het de beste keuze was om de Unity engine te gebruiken.
  
 
 ## Leerdoelen 
