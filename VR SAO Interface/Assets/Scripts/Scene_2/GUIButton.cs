@@ -9,33 +9,57 @@ public class GUIButton : MonoBehaviour {
     private Sprite[] buttonStates;
     [SerializeField]
     private AudioClip[] buttonSounds;
+    [SerializeField]
+    private GameObject[] content;
+
+
+    public GUIButton Parent { get; set; }
+    public GUIButton Root { get; set; }
+
     private AudioSource audioSrc;
     private bool state;
+    private GameObject buttonManager;
+    private ButtonManager scriptManager;
 
-    // Use this for initialization
+    private float cooldownPress = .5f;
+    private bool canPress;
+    public bool isActive;
+
     void Start() {
         audioSrc = GetComponent<AudioSource>();
         spriteR = gameObject.GetComponent<SpriteRenderer>();
-    }
-
-    // Update is called once per frame
-    void Update() {
-
+        buttonManager = GameObject.Find("Interface");
+        scriptManager = buttonManager.GetComponent<ButtonManager>();
+        canPress = true;
     }
 
     void OnTriggerEnter(Collider col) {
-        if (col.gameObject.CompareTag("Hand")) {
+        if (col.gameObject.CompareTag("Hand") && canPress) {
             audioSrc.PlayOneShot(buttonSounds[0]);
-            ChangeState();
+            scriptManager.ButtonClicked(this.gameObject);
+            canPress = false;
+            StartCoroutine("Cooldown");
         }
     }
 
-    public void ChangeState() {
-        state = !state;
-        if (state) {
-            spriteR.sprite = buttonStates[1];
-        } else {
-            spriteR.sprite = buttonStates[0];
+    public void TurnOn() {
+        spriteR.sprite = buttonStates[1];
+        for (int i = 0; i < content.Length; i++) {
+            content[i].SetActive(true);
+            isActive = true;
         }
+    }
+
+    public void TurnOff() {
+        spriteR.sprite = buttonStates[0];
+        for (int i = 0; i < content.Length; i++) {
+            content[i].SetActive(false);
+            isActive = false;
+        }
+    }
+
+    IEnumerator Cooldown() {
+        yield return new WaitForSeconds(cooldownPress);
+        canPress = true; ;
     }
 }

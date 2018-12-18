@@ -59,10 +59,20 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Fade: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Max: 0.3
+    - _Metallic: 0
+    - _Min: 0.1
+<<<<<<< HEAD
+=======
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
+>>>>>>> Develop
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02

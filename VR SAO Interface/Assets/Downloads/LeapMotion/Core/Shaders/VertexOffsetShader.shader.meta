@@ -1,8 +1,22 @@
 fileFormatVersion: 2
 guid: 874f4d9da4c976641b7758937b868fe3
+<<<<<<< HEAD
+timeCreated: 1542011456
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+=======
+<<<<<<< HEAD
+timeCreated: 1542011456
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+=======
 timeCreated: 1474397207
 licenseType: Pro
 ShaderImporter:
+>>>>>>> 7cc466c7e2bb8423bf76e6ca5d936c35003f70a5
+>>>>>>> Develop
   defaultTextures: []
   userData: 
   assetBundleName: 

@@ -22,7 +22,7 @@ public class TechAnimation : MonoBehaviour {
     AudioSource audioSrc;
 
     [SerializeField]
-    Vector3 side;
+    int side;
 
     public static int isDone;
     bool useOnce;
@@ -58,7 +58,8 @@ public class TechAnimation : MonoBehaviour {
     }
 
     void Ending() {
-        transform.position += side * Time.deltaTime * 100;
+        transform.position += new Vector3(side,0,0) * Time.deltaTime * 100;
+        transform.rotation = GameObject.FindGameObjectWithTag("MainCamera").transform.rotation;
         Destroy(gameObject, 1f);
         if (!useOnce) {
             for (int i = 0; i < 3; i++) {
